@@ -4,7 +4,7 @@ STL files. Specifically useful for 3D printing jobs.
 Example Usage:
 
     import stlparser
-    stlmodel = stlparser.parseBSTL("demoparts/angleT.STL")
+    stlmodel = stlparser.loadBSTL("demoparts/angleT.STL")
     stlparser.__shiftUp(stlmodel,5)
     stlparser.addCuboidSupports(stlmodel)
     stlparser.display(stlmodel, showNorms=True)
